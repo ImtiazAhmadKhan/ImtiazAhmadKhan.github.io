@@ -173,7 +173,7 @@ border-radius:6px;
 border:none;
 }
 
-button{
+form button{
 padding:12px;
 background:#38bdf8;
 border:none;
@@ -602,6 +602,56 @@ transition: all 0.8s ease;
 opacity:1;
 transform:translateY(0);
 }
+  /* NEW LOCATION CARD */
+.location-card{
+max-width:1000px;
+margin:auto;
+background:rgba(255,255,255,0.05);
+padding:20px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.map-area{
+position:relative;
+}
+
+.map-area iframe{
+width:100%;
+height:350px;
+border-radius:12px;
+border:none;
+}
+
+/* GLASS INFO OVER MAP */
+.map-overlay{
+position:absolute;
+bottom:15px;
+left:15px;
+background:rgba(0,0,0,0.6);
+padding:15px;
+border-radius:12px;
+color:#fff;
+max-width:260px;
+backdrop-filter:blur(8px);
+}
+
+.map-overlay h3{
+color:#38bdf8;
+margin-bottom:5px;
+}
+
+.map-overlay a{
+display:inline-block;
+margin-top:8px;
+padding:6px 10px;
+background:#38bdf8;
+color:#000;
+border-radius:6px;
+text-decoration:none;
+font-size:14px;
+}
 </style>
 </head>
 
@@ -744,16 +794,20 @@ A: Yes, it prevents future disputes and ensures safe ownership.
 </div>
 </section>
 
-<section id="location" class="fade-in">
+<<section id="location" class="fade-in">
 <h2>Location</h2>
 
-<div class="location-wrapper">
+<div class="location-card">
 
-<!-- LEFT TEXT -->
-<div class="location-text">
+<!-- MAP -->
+<div class="map-area">
+<iframe 
+src="https://www.google.com/maps?q=Imtiaz+Ahmad+Khan+Advocate+Phoolpur+Azamgarh&t=k&z=17&output=embed">
+</iframe>
 
+<!-- GLASS INFO OVER MAP -->
+<div class="map-overlay">
 <h3>Imtiaz Ahmad Khan Advocate</h3>
-
 <p>⭐ 5.0 (Google Reviews)</p>
 <p>Lawyer in Uttar Pradesh</p>
 
@@ -762,23 +816,15 @@ Phoolpur, Jauma<br>
 Uttar Pradesh 276304</p>
 
 <p><b>Hours:</b><br>
-Open: 10 AM – 5 PM</p>
+10 AM – 5 PM</p>
 
 <a href="https://www.google.com/maps?q=Imtiaz+Ahmad+Khan+Advocate+Phoolpur+Azamgarh" target="_blank">
 Open in Google Maps
 </a>
-
-</div>
-
-<!-- RIGHT BIG MAP -->
-<div class="location-map">
-<iframe 
-src="https://www.google.com/maps?q=Imtiaz+Ahmad+Khan+Advocate+Phoolpur+Azamgarh&t=k&z=17&output=embed">
-</iframe>
 </div>
 
 </div>
-
+</div>
 </section>
 
 <section id="consult" class="fade-in">

@@ -560,34 +560,7 @@ border-radius:12px;
 border:none;
 }
 
-/* GLASS INFO OVER MAP */
-.map-overlay{
-position:absolute;
-bottom:15px;
-left:15px;
-background:rgba(0,0,0,0.6);
-padding:15px;
-border-radius:12px;
-color:#fff;
-max-width:260px;
-backdrop-filter:blur(8px);
-}
 
-.map-overlay h3{
-color:#38bdf8;
-margin-bottom:5px;
-}
-
-.map-overlay a{
-display:inline-block;
-margin-top:8px;
-padding:6px 10px;
-background:#38bdf8;
-color:#000;
-border-radius:6px;
-text-decoration:none;
-font-size:14px;
-}
 </style>
 </head>
 
@@ -741,25 +714,7 @@ A: Yes, it prevents future disputes and ensures safe ownership.
 src="https://www.google.com/maps?q=Imtiaz+Ahmad+Khan+Advocate+Phoolpur+Azamgarh&t=k&z=17&output=embed">
 </iframe>
 
-<div class="map-overlay">
-<h3>Imtiaz Ahmad Khan Advocate</h3>
-<p>⭐ 5.0 (Google Reviews)</p>
-<p>Lawyer in Uttar Pradesh</p>
 
-<p><b>Address:</b><br>
-Phoolpur, Jauma<br>
-Uttar Pradesh 276304</p>
-
-<p><b>Hours:</b><br>
-10 AM – 5 PM</p>
-
-<a href="https://www.google.com/maps?q=Imtiaz+Ahmad+Khan+Advocate+Phoolpur+Azamgarh" target="_blank">
-Open in Google Maps
-</a>
-</div>
-
-</div>
-</div>
 
 </section>
 
@@ -931,8 +886,7 @@ window.addEventListener("load", revealOnScroll);
 
 
 </script>
-<button id="aiBtn" onclick="toggleChat()">💬 Ask Shadan AI+</button>
-
+<button id="aiBtn" onclick="toggleChat()">💬 Ask Legal Assistant</button>
 <div id="chatBox" class="chat-box">
 
 <div class="chat-header">
@@ -955,24 +909,6 @@ Legal Assistant ⚖️
 
 </body>
 
-<div class="chat-header">
-Legal Assistant ⚖️
-<span onclick="toggleChat()">✖</span>
-</div>
-
-<div id="chatContent" class="chat-content">
-
-<div class="bot">Hello! How can I help you?</div>
-<div class="options">
-
-
-<button onclick="selectOption('about')">About Advocate</button>
-<button onclick="selectOption('services')">Legal Services</button>
-<button onclick="selectOption('appointment')">Book Appointment</button>
-<button onclick="selectOption('location')">Office Location</button>
-</div>
-
-</div>
 
 </div>
 </html>

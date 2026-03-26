@@ -366,11 +366,8 @@ input, select, textarea{
 width:100%;
 }
 
-}
-{
 .map-box iframe{
 width:100%;
-}
 }
 /* LOCATION FINAL FIX */
 .location-wrapper{
@@ -789,13 +786,16 @@ src="https://www.google.com/maps?q=Imtiaz+Ahmad+Khan+Advocate+Phoolpur+Azamgarh&
 
 <form action="https://formsubmit.co/areebkhqn3@gmail.com" method="POST">
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://ImtiazAhmadKhan.github.io/thankyou.html">
+<input type="hidden" name="_next" value="https://ImtiazAhmadKhan.github.io/test/registry.html">
+
 <input type="text" name="Name" placeholder="Full Name" required>
 <input type="tel" name="Phone" placeholder="Phone Number" required>
 <input type="email" name="Email" placeholder="Email Address" required>
 
+<input type="date" name="Appointment Date" required>
+
 <select name="Time" required>
-<option>Select Time</option>
+<option value="">Select Time</option>
 <option>10 AM - 11 AM</option>
 <option>11 AM - 12 PM</option>
 <option>12 PM - 1 PM</option>
@@ -945,6 +945,10 @@ el.classList.add("show");
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 </script>
+<script>
+
+
+</script>
 </body>
 <button id="aiBtn" onclick="toggleChat()">💬 Ask Shadan AI+</button>
 <div id="chatBox" class="chat-box">
@@ -957,8 +961,9 @@ Legal Assistant ⚖️
 <div id="chatContent" class="chat-content">
 
 <div class="bot">Hello! How can I help you?</div>
-
 <div class="options">
+
+
 <button onclick="selectOption('about')">About Advocate</button>
 <button onclick="selectOption('services')">Legal Services</button>
 <button onclick="selectOption('appointment')">Book Appointment</button>

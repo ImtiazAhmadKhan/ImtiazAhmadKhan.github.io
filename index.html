@@ -431,77 +431,7 @@ height:300px;
 }
 }
 
-#aiBtn{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#38bdf8;
-color:#000;
-border:none;
-padding:12px 18px;
-border-radius:25px;
-cursor:pointer;
-z-index:1000;
-}
 
-.chat-box{
-position:fixed;
-bottom:80px;
-right:20px;
-width:300px;
-background:#0f172a;
-border-radius:12px;
-display:none;
-flex-direction:column;
-overflow:hidden;
-z-index:1000;
-}
-
-.chat-header{
-background:#38bdf8;
-color:#000;
-padding:10px;
-display:flex;
-justify-content:space-between;
-}
-
-.chat-content{
-padding:10px;
-font-size:14px;
-}
-
-.bot{
-background:#1e293b;
-padding:8px;
-margin:5px 0;
-border-radius:6px;
-}
-
-.options{
-display:flex;
-flex-direction:column;
-gap:8px;
-margin-top:10px;
-}
-
-.options button{
-background:#1e293b;
-color:#fff;
-border:none;
-padding:8px;
-border-radius:6px;
-cursor:pointer;
-text-align:left;
-}
-
-.options button:hover{
-background:#38bdf8;
-color:#000;
-}
-button{
-position:relative;
-overflow:hidden;
-}
 
 button::after{
 content:"";
@@ -751,122 +681,7 @@ src="https://www.google.com/maps?q=Imtiaz+Ahmad+Khan+Advocate+Phoolpur+Azamgarh&
 <footer>
 © 2025 Imtiaz Ahmad Khan Advocate | Areeb Khan | All Rights Reserved
 </footer>
-<script>
 
-function toggleChat(){
-let box = document.getElementById("chatBox");
-box.style.display = box.style.display === "flex" ? "none" : "flex";
-box.style.flexDirection = "column";
-}
-
-function goBack(){
-location.reload(); // resets chat
-}
-
-function selectOption(type){
-let chat = document.getElementById("chatContent");
-
-if(type === "about"){
-chat.innerHTML = `
-<div class="bot">
-Advocate Imtiaz Ahmad Khan is a property lawyer with 20+ years experience and 5000+ cases handled.
-</div>
-
-<div class="options">
-<button onclick="selectOption('experience')">Experience</button>
-<button onclick="selectOption('cases')">Cases Handled</button>
-<button onclick="goBack()">⬅ Back</button>
-</div>
-`;
-}
-
-else if(type === "services"){
-chat.innerHTML = `
-<div class="bot">
-Services include land disputes, registry, title verification, agreements and legal advice.
-</div>
-
-<div class="options">
-<button onclick="selectOption('dispute')">Land Disputes</button>
-<button onclick="selectOption('documents')">Registry Documents</button>
-<button onclick="goBack()">⬅ Back</button>
-</div>
-`;
-}
-
-else if(type === "appointment"){
-chat.innerHTML = `
-<div class="bot">
-You can book an appointment using the form on the website.
-</div>
-
-<div class="options">
-<button onclick="selectOption('timing')">Office Timing</button>
-<button onclick="goBack()">⬅ Back</button>
-</div>
-`;
-}
-
-else if(type === "location"){
-chat.innerHTML = `
-<div class="bot">
-Office is located in Phoolpur, Azamgarh, Uttar Pradesh.
-</div>
-
-<div class="options">
-<button onclick="goBack()">⬅ Back</button>
-</div>
-`;
-}
-
-else if(type === "experience"){
-chat.innerHTML = `
-<div class="bot">He has 20+ years of legal experience.</div>
-<div class="options">
-<button onclick="goBack()">⬅ Back</button>
-</div>
-`;
-}
-
-else if(type === "cases"){
-chat.innerHTML = `
-<div class="bot">More than 5000 cases handled successfully.</div>
-<div class="options">
-<button onclick="goBack()">⬅ Back</button>
-</div>
-`;
-}
-
-else if(type === "dispute"){
-chat.innerHTML = `
-<div class="bot">Land disputes require proper legal consultation and documentation.</div>
-<div class="options">
-<button onclick="goBack()">⬅ Back</button>
-</div>
-`;
-}
-
-else if(type === "documents"){
-chat.innerHTML = `
-<div class="bot">You need ID proof, land papers and ownership records.</div>
-<div class="options">
-<button onclick="goBack()">⬅ Back</button>
-</div>
-`;
-}
-
-else if(type === "timing"){
-chat.innerHTML = `
-<div class="bot">Office timing is 10 AM to 5 PM.</div>
-<div class="options">
-<button onclick="goBack()">⬅ Back</button>
-</div>
-`;
-}
-
-}
-
-</script>
 <script>
 const elements = document.querySelectorAll(".fade-in");
 
@@ -886,26 +701,7 @@ window.addEventListener("load", revealOnScroll);
 
 
 </script>
-<button id="aiBtn" onclick="toggleChat()">💬 Ask Legal Assistant</button>
-<div id="chatBox" class="chat-box">
 
-<div class="chat-header">
-Legal Assistant ⚖️
-<span onclick="toggleChat()">✖</span>
-</div>
-
-<div id="chatContent" class="chat-content">
-<div class="bot">Hello! How can I help you?</div>
-
-<div class="options">
-<button onclick="selectOption('about')">About Advocate</button>
-<button onclick="selectOption('services')">Legal Services</button>
-<button onclick="selectOption('appointment')">Book Appointment</button>
-<button onclick="selectOption('location')">Office Location</button>
-</div>
-
-</div>
-</div>
 
 </body>
 

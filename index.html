@@ -22,7 +22,7 @@
       --muted: #7a6e5a;
     }
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; font-size: 16px; }
+    html {  font-size: 16px; }
     body {
   font-family: 'Lato', sans-serif;
   background:
@@ -122,7 +122,7 @@
     .scroll-hint {
       position: absolute; bottom: 2.5rem; left: calc(5vw + 26px);
       display: flex; align-items: center; gap: 0.8rem; z-index: 2;
-      opacity: 0; animation: fu 0.9s 1.7s forwards;
+      opacity: 0; animation: fu none; 1.7s forwards;
     }
     .scroll-hint span { font-family: 'Cinzel', serif; font-size: 0.52rem; letter-spacing: 0.28em; color: var(--muted); text-transform: uppercase; }
     .s-line { width: 38px; height: 1px; background: linear-gradient(to right, var(--gold), transparent); animation: lg 2s ease-in-out infinite; }
@@ -277,7 +277,7 @@
     .wa svg { width: 26px; height: 26px; fill: white; }
 
     /* REVEAL */
-    .rv, .rl, .rr { opacity: 0; transition: opacity 0.75s ease, transform 0.75s ease; }
+    .rv, .rl, .rr { opacity: 1; transition: opacity 0.75s ease, transform 0.75s ease; }
     .rv { transform: translateY(28px); } .rl { transform: translateX(-28px); } .rr { transform: translateX(28px); }
     .rv.in, .rl.in, .rr.in { opacity: 1; transform: none; }
 
@@ -608,11 +608,6 @@ View Google Reviews
     document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
     if (!was) it.classList.add('open');
   }
-
-  // Reveal on scroll
-  const io = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold:0.1});
-  document.querySelectorAll('.rv,.rl,.rr').forEach(el => io.observe(el));
-
   // Counter
   const co = new IntersectionObserver(es => {
     es.forEach(e => {

@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Imtiaz Ahmad Khan | Property Lawyer – Phoolpur, Azamgarh</title>
+<meta name="description" content="Advocate Imtiaz Ahmad Khan – 20+ Years Experience, 5000+ Cases. Trusted Property Lawyer in Phoolpur, Azamgarh, Uttar Pradesh."/>
+<meta name="theme-color" content="#070707"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;500;600;700&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+/* ═══════════════════════════════════════════════
+   CSS VARIABLES
+═══════════════════════════════════════════════ */
+:root {
+  --bg: #070707;
+  --bg2: #0d0d0d;
+  --bg3: #141414;
+  --bg4: #1c1c1c;
+  --gold: #c9a84c;
+  --gold-l: #e8c96a;
+  --gold-d: #8a6820;
+  --glow: rgba(201,168,76,0.22);
+  --cream: #f0e8d8;
+  --cream2: #d4c9b0;
+  --muted: #7a6e5a;
+  --muted2: #9a8e7a;
+  --text: #d4c9b0;
+  --border: rgba(201,168,76,0.13);
+  --border-h: rgba(201,168,76,0.38);
+  --glass: rgba(201,168,76,0.04);
+  --nav-bg: rgba(7,7,7,0.93);
+  --overlay: rgba(7,7,7,0.96);
+  --shadow: 0 0 40px rgba(201,168,76,0.15);
+  --trans: all 0.3s ease;
+}
+[data-theme="light"] {
+  --bg: #f5eedf;
+  --bg2: #ede4ce;
+  --bg3: #e3d8bf;
+  --bg4: #d8cbaa;
+  --gold: #7a5c14;
+  --gold-l: #9a7020;
+  --gold-d: #5a3e08;
+  --glow: rgba(122,92,20,0.18);
+  --cream: #18100a;
+  --cream2: #2e2010;
+  --muted: #6b5835;
+  --muted2: #8a7050;
+  --text: #2e1f0a;
+  --border: rgba(122,92,20,0.2);
+  --border-h: rgba(122,92,20,0.45);
+  --glass: rgba(122,92,20,0.05);
+  --nav-bg: rgba(245,238,223,0.93);
+  --overlay: rgba(245,238,223,0.97);
+  --shadow: 0 0 40px rgba(122,92,20,0.12);
+}
+
+/* ═══════════════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════════════ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{
+  font-family:'Nunito',sans-serif;font-weight:300;
+  background:var(--bg);color:var(--text);
+  line-height:1.8;overflow-x:hidden;
+  transition:background 0.4s,color 0.4s;
+}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-track{background:var(--bg2);}
+::-webkit-scrollbar-thumb{background:var(--gold-d);}
+
+/* Lady Justice Background */
+body::after{
+  content:'';position:fixed;inset:0;
+  background:url('https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  pointer-events:none;z-index:0;
+  transition:opacity 0.4s;
+}
+[data-theme="dark"] body::after{opacity:0.038;}
+[data-theme="light"] body::after{opacity:0.055;}
+
+/* Scroll progress bar */
+#progress-bar{
+  position:fixed;top:0;left:0;height:2px;width:0%;
+  background:linear-gradient(to right,var(--gold-d),var(--gold),var(--gold-l));
+  z-index:9999;transition:width 0.1s;
+}
+
+/* ═══════════════════════════════════════════════
+   NAVBAR
+═══════════════════════════════════════════════ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 5vw;height:68px;
+  background:var(--nav-bg);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);
+  transition:height 0.35s,background 0.4s;
+}
+nav.scrolled{height:56px;}
+.nav-brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.2;}
+.nav-brand-main{font-family:'Cinzel',serif;font-size:clamp(0.68rem,1.8vw,0.88rem);color:var(--gold);letter-spacing:0.14em;font-weight:600;}
+.nav-brand-sub{font-family:'Cinzel',serif;font-size:0.52rem;color:var(--muted);letter-spacing:0.22em;text-transform:uppercase;}
+.nav-links{display:flex;gap:1.6rem;list-style:none;align-items:center;}
+.nav-links a{
+  color:var(--muted2);text-decoration:none;font-family:'Cinzel',serif;
+  font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;
+  transition:var(--trans);position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-3px;left:0;right:0;height:1px;
+  background:var(--gold);transform:scaleX(0);transition:transform 0.3s;
+}
+.nav-links a:hover{color:var(--gold);}
+.nav-links a:hover::after{transform:scaleX(1);}
+.nav-btn{background:var(--gold)!important;color:var(--bg)!important;padding:0.4rem 1.1rem!important;font-weight:700!important;}
+.nav-btn::after{display:none!important;}
+.nav-btn:hover{background:var(--gold-l)!important;}
+.nav-controls{display:flex;gap:0.55rem;align-items:center;}
+.ctrl-btn{
+  width:34px;height:34px;border-radius:6px;
+  border:1px solid var(--border);background:var(--glass);
+  color:var(--muted2);cursor:pointer;font-family:'Cinzel',serif;
+  font-size:0.6rem;letter-spacing:0.08em;font-weight:600;
+  transition:var(--trans);display:flex;align-items:center;justify-content:center;
+}
+.ctrl-btn:hover{background:var(--gold);color:var(--bg);border-color:var(--gold);}
+.hamburger{display:none;flex-direction:column;gap:4.5px;cursor:pointer;padding:5px;background:none;border:none;}
+.hamburger span{display:block;width:20px;height:1.5px;background:var(--gold);transition:all 0.3s;}
+.hamburger.active span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.hamburger.active span:nth-child(2){opacity:0;transform:scaleX(0);}
+.hamburger.active span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+.mobile-menu{
+  display:none;position:fixed;top:68px;left:0;right:0;
+  background:var(--nav-bg);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);padding:1.2rem 5vw 2rem;
+  z-index:899;flex-direction:column;
+}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{
+  color:var(--muted2);text-decoration:none;font-family:'Cinzel',serif;
+  font-size:0.8rem;letter-spacing:0.18em;text-transform:uppercase;
+  padding:1rem 0;border-bottom:1px solid var(--border);transition:var(--trans);
+}
+.mobile-menu a:hover{color:var(--gold);}
+.m-cta{
+  margin-top:0.8rem;background:var(--gold);color:var(--bg)!important;
+  text-align:center;padding:0.85rem!important;font-weight:700!important;border:none!important;
+}
+
+/* ═══════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════ */
+#home{
+  min-height:100vh;position:relative;display:flex;align-items:center;
+  padding-top:68px;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(to right, rgba(7,7,7,0.97) 0%, rgba(7,7,7,0.9) 60%, rgba(7,7,7,0.5) 100%),
+    url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  z-index:1;
+}
+[data-theme="light"] .hero-bg{
+  background:
+    linear-gradient(to right, rgba(245,238,223,0.97) 0%, rgba(245,238,223,0.9) 60%, rgba(245,238,223,0.5) 100%),
+    url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+.hero-bg::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:200px;
+  background:linear-gradient(to top,var(--bg),transparent);
+}
+.hero-vline{
+  position:absolute;left:5vw;top:10%;bottom:10%;width:1px;
+  background:linear-gradient(to bottom,transparent,var(--border-h),transparent);
+  z-index:2;
+}
+.hero-inner{
+  position:relative;z-index:2;
+  padding:5rem calc(5vw + 28px) 5rem 5vw;
+  max-width:780px;width:100%;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:0.65rem;
+  border:1px solid var(--border-h);padding:0.38rem 0.95rem;
+  font-family:'Cinzel',serif;font-size:0.56rem;letter-spacing:0.26em;
+  color:var(--gold);text-transform:uppercase;margin-bottom:1.8rem;
+  opacity:0;animation:fadeUp 0.9s 0.2s forwards;
+}
+.tag-dot{
+  width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0;
+  animation:dotPulse 2.2s ease-in-out infinite;
+}
+@keyframes dotPulse{
+  0%,100%{box-shadow:0 0 0 0 var(--glow);}
+  50%{box-shadow:0 0 0 7px rgba(201,168,76,0);}
+}
+.hero-name{
+  font-family:'Cormorant Garamond',serif;font-weight:700;
+  font-size:clamp(2.6rem,6.5vw,5.2rem);color:var(--cream);
+  line-height:1.05;margin-bottom:0.3rem;letter-spacing:0.02em;
+  opacity:0;animation:fadeUp 0.9s 0.4s forwards;
+}
+.hero-role{
+  font-family:'Cinzel',serif;font-size:clamp(0.56rem,1.3vw,0.72rem);
+  letter-spacing:0.32em;color:var(--gold-d);text-transform:uppercase;margin-bottom:1.8rem;
+  opacity:0;animation:fadeUp 0.9s 0.6s forwards;
+}
+.hero-rule{width:50px;height:1px;background:var(--gold);margin-bottom:1.8rem;opacity:0;animation:fadeUp 0.9s 0.7s forwards;}
+.hero-desc{
+  color:var(--muted2);font-size:clamp(0.9rem,1.9vw,1.04rem);max-width:500px;
+  margin-bottom:2.5rem;line-height:1.9;font-weight:300;
+  opacity:0;animation:fadeUp 0.9s 0.8s forwards;
+}
+.hero-stats{display:flex;align-items:center;margin-bottom:2.5rem;flex-wrap:wrap;opacity:0;animation:fadeUp 0.9s 1.0s forwards;}
+.hst{padding:0 2.2rem 0 0;}
+.hst:not(:last-child){border-right:1px solid var(--border);margin-right:2.2rem;}
+.hst-n{font-family:'Nunito',serif;font-size:clamp(1.8rem,3.8vw,2.6rem);font-weight:700;color:var(--gold);display:block;line-height:1;margin-bottom:0.15rem;}
+.hst-l{font-family:'Cinzel',serif;font-size:0.52rem;letter-spacing:0.17em;color:var(--muted);text-transform:uppercase;}
+.hero-cta{opacity:0;animation:fadeUp 0.9s 1.2s forwards;}
+.btn-gold{
+  display:inline-block;background:var(--gold);color:var(--bg);
+  padding:0.85rem 2.2rem;font-family:'Cinzel',serif;font-size:0.65rem;
+  letter-spacing:0.22em;text-transform:uppercase;text-decoration:none;font-weight:700;
+  transition:var(--trans);
+}
+.btn-gold:hover{background:var(--gold-l);transform:translateY(-2px);box-shadow:0 8px 28px var(--glow);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+.scroll-hint{
+  position:absolute;bottom:2.2rem;left:calc(5vw + 28px);
+  display:flex;align-items:center;gap:0.7rem;z-index:2;
+  opacity:0;animation:fadeUp 0.9s 1.7s forwards;
+}
+.scroll-hint span{font-family:'Cinzel',serif;font-size:0.48rem;letter-spacing:0.28em;color:var(--muted);text-transform:uppercase;}
+.s-line{width:34px;height:1px;background:linear-gradient(to right,var(--gold),transparent);animation:linePulse 2s ease-in-out infinite;}
+@keyframes linePulse{0%,100%{transform:scaleX(0.5);opacity:0.4;}50%{transform:scaleX(1);opacity:1;}}
+
+/* ═══════════════════════════════════════════════
+   SECTION COMMONS
+═══════════════════════════════════════════════ */
+section{padding:6.5rem 5vw;position:relative;z-index:1;}
+.s-label{display:flex;align-items:center;gap:0.9rem;margin-bottom:0.8rem;}
+.s-label::before{content:'';display:block;width:28px;height:1px;background:var(--gold);flex-shrink:0;}
+.s-label span{font-family:'Cinzel',serif;font-size:0.56rem;letter-spacing:0.36em;color:var(--gold);text-transform:uppercase;}
+h2.s-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4.2vw,2.9rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:0.9rem;}
+h2.s-title em{font-style:italic;color:var(--gold);}
+.s-rule{display:flex;align-items:center;gap:0.9rem;margin-bottom:3.2rem;}
+.s-rule::before,.s-rule::after{content:'';flex:1;height:1px;background:var(--border);}
+.s-rule-ico{color:var(--gold);font-size:0.8rem;}
+
+/* Reveal animations */
+.rv,.rl,.rr{opacity:0;transition:opacity 0.75s ease,transform 0.75s ease;}
+.rv{transform:translateY(28px);}
+.rl{transform:translateX(-28px);}
+.rr{transform:translateX(28px);}
+.rv.in,.rl.in,.rr.in{opacity:1;transform:none;}
+
+/* ═══════════════════════════════════════════════
+   ABOUT
+═══════════════════════════════════════════════ */
+#about{background:var(--bg2);}
+.about-grid{display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:4.5rem;align-items:center;}
+.photo-wrap{position:relative;max-width:320px;}
+.photo-wrap::before{
+  content:'';position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;
+  border:1px solid var(--border);pointer-events:none;z-index:0;
+}
+.photo-wrap img{
+  width:100%;display:block;position:relative;z-index:1;
+  filter:grayscale(18%) contrast(1.06);
+  box-shadow:0 20px 50px rgba(0,0,0,0.45);
+}
+.exp-badge{
+  position:absolute;bottom:-16px;right:-16px;z-index:2;
+  width:100px;height:100px;background:var(--gold);border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;box-shadow:0 10px 30px var(--glow);
+}
+.exp-badge strong{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:var(--bg);line-height:1;}
+.exp-badge small{font-family:'Cinzel',serif;font-size:0.42rem;letter-spacing:0.08em;color:rgba(7,7,7,0.65);line-height:1.3;}
+.about-text p{color:var(--muted2);font-size:0.97rem;margin-bottom:1.2rem;line-height:1.9;}
+.pills{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.8rem;}
+.pill{
+  border:1px solid var(--border);padding:0.28rem 0.88rem;
+  font-family:'Cinzel',serif;font-size:0.52rem;letter-spacing:0.14em;color:var(--gold);
+  text-transform:uppercase;transition:var(--trans);cursor:default;
+}
+.pill:hover{background:var(--glass);border-color:var(--border-h);box-shadow:0 0 12px var(--glow);}
+
+/* ═══════════════════════════════════════════════
+   SERVICES
+═══════════════════════════════════════════════ */
+#services{background:var(--bg);}
+.svc-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1px;background:var(--border);border:1px solid var(--border);
+}
+.svc{
+  background:var(--bg);padding:2.4rem 1.9rem;position:relative;
+  overflow:hidden;transition:background 0.35s;cursor:default;
+}
+.svc:hover{background:var(--bg3);}
+.svc::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(to right,transparent,var(--gold),transparent);
+  transform:scaleX(0);transition:transform 0.4s;
+}
+.svc:hover::before{transform:scaleX(1);}
+.svc-num{
+  position:absolute;top:0.9rem;right:1.1rem;
+  font-family:'Cormorant Garamond',serif;font-size:3.8rem;font-weight:700;
+  color:rgba(201,168,76,0.04);line-height:1;pointer-events:none;
+}
+.svc-ico{
+  width:44px;height:44px;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.3rem;font-size:1.1rem;color:var(--gold);
+  transition:var(--trans);
+}
+.svc:hover .svc-ico{background:var(--gold);color:var(--bg);border-color:var(--gold);box-shadow:0 0 20px var(--glow);}
+.svc h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--cream);margin-bottom:0.5rem;font-weight:600;}
+.svc p{color:var(--muted);font-size:0.85rem;line-height:1.75;}
+
+/* ═══════════════════════════════════════════════
+   TESTIMONIALS
+═══════════════════════════════════════════════ */
+#testimonials{background:var(--bg2);}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem;}
+.testi{
+  background:var(--bg);border:1px solid var(--border);padding:2.2rem 1.9rem;
+  position:relative;transition:border-color 0.3s,transform 0.3s;
+}
+.testi:hover{border-color:var(--border-h);transform:translateY(-4px);box-shadow:var(--shadow);}
+.testi::before{
+  content:'';position:absolute;top:0;left:2rem;right:2rem;height:1px;
+  background:linear-gradient(to right,transparent,var(--border-h),transparent);
+}
+.testi-q{font-family:'Cormorant Garamond',serif;font-size:4rem;color:rgba(201,168,76,0.09);line-height:0.6;margin-bottom:1.1rem;font-style:italic;}
+.testi-text{color:var(--cream2);font-size:0.93rem;font-style:italic;line-height:1.85;margin-bottom:1.5rem;}
+.testi-author{display:flex;align-items:center;gap:0.8rem;}
+.testi-av{
+  width:38px;height:38px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--gold-d),var(--gold));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cinzel',serif;font-weight:700;color:var(--bg);font-size:0.82rem;
+}
+.testi-name{font-family:'Cinzel',serif;font-size:0.64rem;color:var(--cream);letter-spacing:0.1em;display:block;margin-bottom:0.18rem;}
+.testi-stars{color:var(--gold);font-size:0.62rem;letter-spacing:0.06em;}
+
+/* ═══════════════════════════════════════════════
+   FAQ
+═══════════════════════════════════════════════ */
+#faq{background:var(--bg);}
+.faq-wrap{max-width:780px;}
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-q{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1.5rem 0;cursor:pointer;color:var(--cream);
+  font-family:'Cormorant Garamond',serif;font-size:clamp(0.95rem,2.4vw,1.06rem);font-weight:600;
+  transition:color 0.3s;user-select:none;
+}
+.faq-q:hover{color:var(--gold);}
+.faq-ico{
+  width:22px;height:22px;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  color:var(--gold);font-size:0.95rem;transition:transform 0.35s,background 0.3s,border-color 0.3s;line-height:1;
+}
+.faq-item.open .faq-ico{transform:rotate(45deg);background:var(--gold);color:var(--bg);border-color:var(--gold);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease;}
+.faq-item.open .faq-a{max-height:200px;}
+.faq-a p{color:var(--muted2);font-size:0.93rem;line-height:1.85;padding-bottom:1.5rem;}
+
+/* ═══════════════════════════════════════════════
+   LOCATION
+═══════════════════════════════════════════════ */
+#location{background:var(--bg2);}
+.loc-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:3.5rem;align-items:start;}
+.loc-items{display:flex;flex-direction:column;gap:1rem;}
+.loc-item{
+  display:flex;gap:1rem;align-items:flex-start;
+  padding:1.2rem 1.3rem;border:1px solid var(--border);
+  transition:border-color 0.3s,background 0.3s;
+}
+.loc-item:hover{border-color:var(--border-h);background:var(--glass);box-shadow:0 0 16px var(--glow);}
+.loc-ico{font-size:1.1rem;color:var(--gold);flex-shrink:0;margin-top:0.06rem;}
+.loc-item h4{font-family:'Cinzel',serif;font-size:0.54rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:0.25rem;}
+.loc-item p{color:var(--muted2);font-size:0.9rem;line-height:1.6;white-space:pre-line;}
+.map-box{border:1px solid var(--border);overflow:hidden;line-height:0;position:relative;}
+.map-box iframe{width:100%;height:280px;border:none;display:block;filter:grayscale(20%);}
+
+/* ═══════════════════════════════════════════════
+   APPOINTMENT
+═══════════════════════════════════════════════ */
+#consult{background:var(--bg);}
+.appt-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:4.5rem;align-items:start;}
+.appt-info p{color:var(--muted2);font-size:0.97rem;margin-bottom:2.2rem;line-height:1.9;}
+.perks{display:flex;flex-direction:column;gap:0.8rem;}
+.perk{display:flex;align-items:center;gap:0.8rem;color:var(--cream2);font-size:0.9rem;}
+.perk-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;}
+.appt-box{
+  background:var(--bg2);border:1px solid var(--border);
+  padding:2.6rem 2.3rem;position:relative;
+}
+.appt-box::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,transparent,var(--gold),transparent);
+}
+.appt-box h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--cream);margin-bottom:0.3rem;font-weight:600;}
+.appt-box .a-sub{color:var(--muted);font-size:0.83rem;margin-bottom:1.8rem;}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:0.9rem;}
+.fg{margin-bottom:0.9rem;}
+.fg label{
+  display:block;font-family:'Cinzel',serif;font-size:0.52rem;
+  letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:0.38rem;
+}
+.fg input,.fg select,.fg textarea{
+  width:100%;background:var(--glass);border:1px solid var(--border);
+  padding:0.78rem 0.9rem;color:var(--cream);
+  font-family:'Nunito',sans-serif;font-size:0.93rem;font-weight:400;
+  outline:none;border-radius:0;appearance:none;-webkit-appearance:none;
+  transition:border-color 0.3s,background 0.3s,box-shadow 0.3s;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  border-color:var(--gold);background:rgba(201,168,76,0.04);
+  box-shadow:0 0 0 3px rgba(201,168,76,0.08);
+}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(154,142,122,0.5);}
+.fg select option{background:var(--bg3);color:var(--cream);}
+.fg textarea{resize:vertical;min-height:85px;}
+
+/* Time slots grid */
+.time-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;margin-top:0.4rem;}
+.time-btn{
+  padding:0.55rem 0.4rem;border:1px solid var(--border);background:var(--glass);
+  color:var(--muted2);font-family:'Cinzel',serif;font-size:0.5rem;letter-spacing:0.08em;
+  cursor:pointer;text-align:center;transition:var(--trans);
+}
+.time-btn:hover:not(.booked){border-color:var(--border-h);color:var(--gold);background:rgba(201,168,76,0.06);}
+.time-btn.selected{background:var(--gold);color:var(--bg);border-color:var(--gold);box-shadow:0 0 14px var(--glow);}
+.time-btn.booked{
+  opacity:0.45;cursor:not-allowed;
+  background:rgba(201,168,76,0.03);
+  text-decoration:line-through;font-size:0.45rem;
+}
+.f-sub{
+  width:100%;background:var(--gold);color:var(--bg);border:none;
+  padding:1.1rem;font-family:'Cinzel',serif;font-size:0.74rem;
+  letter-spacing:0.2em;text-transform:uppercase;font-weight:700;
+  cursor:pointer;transition:var(--trans);margin-top:0.35rem;
+}
+.f-sub:hover:not(:disabled){background:var(--gold-l);transform:translateY(-1px);box-shadow:0 6px 22px var(--glow);}
+.f-sub:disabled{opacity:0.6;cursor:not-allowed;}
+.hidden-slot{display:none;}
+
+/* Appointment Success */
+.ty-ov{
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,0.9);
+  z-index:9998;align-items:center;justify-content:center;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+}
+.ty-ov.show{display:flex;}
+.ty-box{
+  background:var(--bg2);border:1px solid var(--border-h);
+  padding:3.5rem 2.8rem;text-align:center;max-width:460px;width:90%;
+  position:relative;animation:fadeUp 0.5s ease;
+}
+.ty-box::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,transparent,var(--gold),transparent);
+}
+.ty-ico{
+  width:66px;height:66px;border:1.5px solid var(--gold);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 1.4rem;font-size:1.6rem;color:var(--gold);
+  animation:popIn 0.4s 0.2s both;
+}
+@keyframes popIn{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}
+.ty-box h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--cream);margin-bottom:0.6rem;font-weight:600;}
+.ty-box p{color:var(--muted2);font-size:0.92rem;line-height:1.75;margin-bottom:1.8rem;}
+.ty-cls{
+  background:var(--gold);color:var(--bg);border:none;
+  padding:0.75rem 2.2rem;font-family:'Cinzel',serif;font-size:0.62rem;
+  letter-spacing:0.2em;cursor:pointer;font-weight:700;transition:var(--trans);
+}
+.ty-cls:hover{background:var(--gold-l);}
+
+/* ═══════════════════════════════════════════════
+   AI CHAT WIDGET
+═══════════════════════════════════════════════ */
+.chat-fab{
+  position:fixed;bottom:2rem;right:2rem;z-index:800;
+  width:56px;height:56px;background:var(--gold);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;border:none;
+  box-shadow:0 4px 20px var(--glow);transition:var(--trans);
+  font-size:1.2rem;color:var(--bg);
+}
+.chat-fab:hover{transform:scale(1.1);box-shadow:0 6px 30px var(--glow);}
+.chat-fab .fab-badge{
+  position:absolute;top:-2px;right:-2px;
+  width:12px;height:12px;background:#4caf50;border-radius:50%;
+  border:2px solid var(--bg);animation:badgePulse 2s ease-in-out infinite;
+}
+@keyframes badgePulse{0%,100%{transform:scale(1);}50%{transform:scale(1.3);}}
+.chat-window{
+  position:fixed;bottom:5.5rem;right:2rem;z-index:801;
+  width:360px;max-height:520px;
+  background:var(--bg2);border:1px solid var(--border);
+  display:none;flex-direction:column;
+  box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+.chat-window.open{display:flex;}
+.chat-header{
+  padding:1rem 1.2rem;border-bottom:1px solid var(--border);
+  background:var(--bg3);display:flex;align-items:center;justify-content:space-between;
+}
+.chat-header-left{display:flex;align-items:center;gap:0.7rem;}
+.chat-avatar{
+  width:32px;height:32px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold-d),var(--gold));
+  display:flex;align-items:center;justify-content:center;font-size:0.9rem;
+}
+.chat-header-info h4{font-family:'Cinzel',serif;font-size:0.6rem;color:var(--cream);letter-spacing:0.1em;margin-bottom:0.1rem;}
+.chat-header-info span{font-size:0.62rem;color:#4caf50;}
+.chat-close{
+  background:none;border:none;color:var(--muted);cursor:pointer;
+  font-size:1.1rem;transition:color 0.2s;padding:0.2rem;
+}
+.chat-close:hover{color:var(--cream);}
+.chat-body{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:0.8rem;scroll-behavior:smooth;}
+.chat-body::-webkit-scrollbar{width:3px;}
+.chat-body::-webkit-scrollbar-thumb{background:var(--gold-d);}
+.chat-msg{max-width:88%;padding:0.7rem 0.95rem;font-size:0.87rem;line-height:1.65;}
+.chat-msg.user{
+  align-self:flex-end;background:var(--gold);color:var(--bg);
+  font-family:'Nunito',sans-serif;font-weight:500;
+}
+.chat-msg.bot{
+  align-self:flex-start;background:var(--bg3);color:var(--text);
+  border:1px solid var(--border);
+}
+.chat-msg.typing{background:var(--bg3);border:1px solid var(--border);align-self:flex-start;}
+.typing-dots{display:flex;gap:4px;padding:0.2rem 0;}
+.typing-dots span{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:typeDot 1.2s ease-in-out infinite;}
+.typing-dots span:nth-child(2){animation-delay:0.2s;}
+.typing-dots span:nth-child(3){animation-delay:0.4s;}
+@keyframes typeDot{0%,100%{transform:translateY(0);opacity:0.4;}50%{transform:translateY(-4px);opacity:1;}}
+.chat-footer{padding:0.8rem;border-top:1px solid var(--border);display:flex;gap:0.5rem;}
+.chat-input{
+  flex:1;background:var(--glass);border:1px solid var(--border);
+  padding:0.6rem 0.8rem;color:var(--cream);
+  font-family:'Nunito',sans-serif;font-size:0.85rem;
+  outline:none;transition:border-color 0.3s;
+}
+.chat-input:focus{border-color:var(--gold);}
+.chat-input::placeholder{color:rgba(154,142,122,0.5);}
+.chat-send{
+  background:var(--gold);color:var(--bg);border:none;
+  padding:0.6rem 0.9rem;cursor:pointer;font-size:0.85rem;
+  transition:var(--trans);font-weight:700;
+}
+.chat-send:hover{background:var(--gold-l);}
+.chat-powered{
+  padding:0.4rem;text-align:center;
+  font-family:'Cinzel',serif;font-size:0.45rem;
+  letter-spacing:0.18em;color:var(--muted);text-transform:uppercase;
+  border-top:1px solid var(--border);
+}
+
+/* ═══════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════ */
+footer{
+  background:var(--bg2);border-top:1px solid var(--border);
+  padding:4rem 5vw 2.2rem;position:relative;z-index:1;
+}
+.fg-grid{
+  display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:3rem;
+  padding-bottom:2.8rem;border-bottom:1px solid var(--border);margin-bottom:1.8rem;
+}
+.fb h3{font-family:'Cinzel',serif;color:var(--gold);font-size:0.9rem;letter-spacing:0.13em;margin-bottom:0.2rem;}
+.fb .f-tag{font-size:0.54rem;letter-spacing:0.2em;color:var(--muted);font-family:'Cinzel',serif;text-transform:uppercase;margin-bottom:0.9rem;}
+.fb p{color:var(--muted);font-size:0.85rem;max-width:280px;line-height:1.75;}
+.fc h4{font-family:'Cinzel',serif;font-size:0.56rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:1.1rem;}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem;}
+.fc ul a{color:var(--muted);text-decoration:none;font-size:0.85rem;transition:color 0.3s;display:flex;align-items:center;gap:0.35rem;}
+.fc ul a::before{content:'›';color:var(--gold-d);}
+.fc ul a:hover{color:var(--gold);}
+.fbot{display:flex;justify-content:center;text-align:center;}
+.fbot p{color:var(--muted);font-size:0.76rem;}
+.fbot span{color:var(--gold);}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════ */
+@media(max-width:980px){
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .about-grid{grid-template-columns:1fr;gap:3.5rem;}
+  .photo-wrap{max-width:290px;margin:0 auto;}
+  .loc-grid{grid-template-columns:1fr;}
+  .appt-grid{grid-template-columns:1fr;gap:3rem;}
+  .fg-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:640px){
+  section{padding:5rem 5vw;}
+  .f-row{grid-template-columns:1fr;}
+  .fg-grid{grid-template-columns:1fr;}
+  .fbot{flex-direction:column;}
+  .appt-box{padding:2rem 1.3rem;}
+  .hero-stats{gap:0;}
+  .hst{padding:0 1.3rem 0 0;margin-bottom:0.8rem;}
+  .hst:not(:last-child){margin-right:1.3rem;}
+  .time-grid{grid-template-columns:repeat(2,1fr);}
+  .chat-window{width:calc(100vw - 2rem);right:1rem;bottom:5rem;}
+  .chat-fab{bottom:1rem;right:1rem;}
+  .hero-vline{display:none;}
+  .hero-inner{padding:5rem 5vw;}
+  .scroll-hint{left:5vw;}
+  .svc-grid{grid-template-columns:1fr;}
+}
+@media(max-width:480px){
+  .hero-name{font-size:2.2rem;}
+  .exp-badge{width:84px;height:84px;bottom:-10px;right:-10px;}
+  .exp-badge strong{font-size:1.5rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div id="progress-bar"></div>
+
+<!-- Appointment Success Overlay -->
+<div class="ty-ov" id="tyOv" role="dialog" aria-modal="true">
+  <div class="ty-box">
+    <div class="ty-ico">✓</div>
+    <h2 id="ty-title">Appointment Confirmed!</h2>
+    <p id="ty-msg">Your appointment request has been received. We will confirm your slot within 24 hours.</p>
+    <button class="ty-cls" onclick="closeTy()">Close</button>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar">
+  <a href="#home" class="nav-brand" aria-label="Imtiaz Ahmad Khan - Home">
+    <span class="nav-brand-main">Imtiaz Ahmad Khan</span>
+    <span class="nav-brand-sub" data-en="Advocate · Phoolpur, Azamgarh" data-hi="अधिवक्ता · फूलपुर, आज़मगढ़">Advocate · Phoolpur, Azamgarh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home" data-en="Home" data-hi="होम">Home</a></li>
+    <li><a href="#about" data-en="About" data-hi="परिचय">About</a></li>
+    <li><a href="#services" data-en="Services" data-hi="सेवाएं">Services</a></li>
+    <li><a href="#testimonials" data-en="Clients" data-hi="ग्राहक">Clients</a></li>
+    <li><a href="#faq" data-en="FAQ" data-hi="प्रश्न">FAQ</a></li>
+    <li><a href="#location" data-en="Location" data-hi="स्थान">Location</a></li>
+    <li><a href="#consult" class="nav-btn" data-en="Book Now" data-hi="बुक करें">Book Now</a></li>
+  </ul>
+  <div class="nav-controls">
+    <button class="ctrl-btn" id="langBtn" onclick="toggleLang()" title="Language" aria-label="Toggle language">हिं</button>
+    <button class="ctrl-btn" id="themeBtn" onclick="toggleTheme()" title="Theme" aria-label="Toggle theme">☀</button>
+  </div>
+  <button class="hamburger" id="hbg" onclick="toggleNav()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ MOBILE MENU ══ -->
+<div class="mobile-menu" id="mobMenu">
+  <a href="#home" onclick="closeNav()" data-en="Home" data-hi="होम">Home</a>
+  <a href="#about" onclick="closeNav()" data-en="About" data-hi="परिचय">About</a>
+  <a href="#services" onclick="closeNav()" data-en="Services" data-hi="सेवाएं">Services</a>
+  <a href="#testimonials" onclick="closeNav()" data-en="Clients" data-hi="ग्राहक">Clients</a>
+  <a href="#faq" onclick="closeNav()" data-en="FAQ" data-hi="प्रश्न">FAQ</a>
+  <a href="#location" onclick="closeNav()" data-en="Location" data-hi="स्थान">Location</a>
+  <a href="#consult" class="m-cta" onclick="closeNav()" data-en="Book Appointment" data-hi="अपॉइंटमेंट बुक करें">Book Appointment</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="home" aria-label="Hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-vline" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">
+      <div class="tag-dot"></div>
+      <span data-en="Property Lawyer · Phoolpur, Azamgarh" data-hi="संपत्ति वकील · फूलपुर, आज़मगढ़">Property Lawyer · Phoolpur, Azamgarh</span>
+    </div>
+    <h1 class="hero-name" data-en="Imtiaz Ahmad Khan" data-hi="इम्तियाज़ अहमद खान">Imtiaz Ahmad Khan</h1>
+    <p class="hero-role" data-en="Advocate &nbsp;·&nbsp; Phoolpur, Azamgarh &nbsp;·&nbsp; 20+ Years" data-hi="अधिवक्ता &nbsp;·&nbsp; फूलपुर, आज़मगढ़ &nbsp;·&nbsp; 20+ वर्ष">Advocate &nbsp;·&nbsp; Phoolpur, Azamgarh &nbsp;·&nbsp; 20+ Years</p>
+    <div class="hero-rule" aria-hidden="true"></div>
+    <p class="hero-desc" data-en="Trusted legal expertise for land disputes, property registry, title verification, and all property matters — handled with precision, clarity, and integrity." data-hi="भूमि विवाद, संपत्ति रजिस्ट्री, टाइटल सत्यापन और सभी संपत्ति मामलों के लिए विश्वसनीय कानूनी सेवाएं — सटीकता, स्पष्टता और ईमानदारी के साथ।">Trusted legal expertise for land disputes, property registry, title verification, and all property matters — handled with precision, clarity, and integrity.</p>
+    <div class="hero-stats" aria-label="Statistics">
+      <div class="hst">
+        <span class="hst-n" data-count="20" data-suffix="+">0</span>
+        <span class="hst-l" data-en="Years Exp." data-hi="वर्ष अनुभव">Years Exp.</span>
+      </div>
+      <div class="hst">
+        <span class="hst-n" data-count="5000" data-suffix="+">0</span>
+        <span class="hst-l" data-en="Cases Handled" data-hi="मामले निपटाए">Cases Handled</span>
+      </div>
+      <div class="hst">
+        <span class="hst-n">100%</span>
+        <span class="hst-l" data-en="Trusted" data-hi="विश्वसनीय">Trusted</span>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="#consult" class="btn-gold" data-en="Book Consultation" data-hi="परामर्श बुक करें">Book Consultation</a>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="s-line"></div>
+    <span data-en="Scroll" data-hi="स्क्रॉल">Scroll</span>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="s-label"><span data-en="About the Advocate" data-hi="वकील के बारे में">About the Advocate</span></div>
+  <h2 class="s-title rv" data-en="Two Decades of <em>Legal Excellence</em>" data-hi="दो दशकों की <em>कानूनी उत्कृष्टता</em>">Two Decades of <em>Legal Excellence</em></h2>
+  <div class="s-rule rv"><div class="s-rule-ico">⚖</div></div>
+  <div class="about-grid">
+    <div class="photo-wrap rl">
+      <img src="https://imtiazahmadkhan.github.io/imtiaz.jpg" alt="Advocate Imtiaz Ahmad Khan, Property Lawyer in Phoolpur Azamgarh" loading="lazy" onerror="this.closest('.photo-wrap').style.display='none'"/>
+      <div class="exp-badge">
+        <strong>20+</strong>
+        <small data-en="Years of Practice" data-hi="वर्षों का अभ्यास">Years of Practice</small>
+      </div>
+    </div>
+    <div class="about-text rr">
+      <p data-en="Advocate Imtiaz Ahmad Khan is a highly experienced and respected property lawyer practicing in Phoolpur, Azamgarh, with more than two decades of continuous legal practice. He has built a strong reputation for handling complex property-related cases with clarity, precision, and professionalism." data-hi="अधिवक्ता इम्तियाज़ अहमद खान फूलपुर, आज़मगढ़ में कार्यरत एक अत्यंत अनुभवी और सम्मानित संपत्ति वकील हैं, जिनके पास दो दशकों से अधिक का निरंतर कानूनी अनुभव है। उन्होंने जटिल संपत्ति मामलों को स्पष्टता, सटीकता और पेशेवर तरीके से संभालते हुए मजबूत प्रतिष्ठा बनाई है।">Advocate Imtiaz Ahmad Khan is a highly experienced and respected property lawyer practicing in Phoolpur, Azamgarh, with more than two decades of continuous legal practice. He has built a strong reputation for handling complex property-related cases with clarity, precision, and professionalism.</p>
+      <p data-en="With over 5,000 successfully handled cases — covering land disputes, registry work, title verification, ownership conflicts, partition cases, and documentation — his practical knowledge and courtroom experience deliver effective, tailored solutions for every client." data-hi="5,000 से अधिक सफलतापूर्वक निपटाए गए मामलों — भूमि विवाद, रजिस्ट्री कार्य, टाइटल सत्यापन, स्वामित्व विवाद, बंटवारा मामले और दस्तावेज़ीकरण — के साथ, उनका व्यावहारिक ज्ञान और अदालती अनुभव हर ग्राहक को प्रभावी समाधान देता है।">With over 5,000 successfully handled cases — covering land disputes, registry work, title verification, ownership conflicts, partition cases, and documentation — his practical knowledge and courtroom experience deliver effective, tailored solutions for every client.</p>
+      <p data-en="Known for simplifying complicated legal matters, he ensures clients fully understand their case before proceeding. His approach is built on honesty, transparency, and a strong commitment to achieving the best possible outcome." data-hi="जटिल कानूनी मामलों को सरल बनाने के लिए जाने जाने वाले, वे यह सुनिश्चित करते हैं कि ग्राहक आगे बढ़ने से पहले अपने मामले को पूरी तरह समझें। उनका दृष्टिकोण ईमानदारी, पारदर्शिता और सर्वोत्तम परिणाम की प्रतिबद्धता पर आधारित है।">Known for simplifying complicated legal matters, he ensures clients fully understand their case before proceeding. His approach is built on honesty, transparency, and a strong commitment to achieving the best possible outcome.</p>
+      <p data-en="His reputation is built not only on experience, but on the trust earned from thousands of satisfied clients who return and recommend his services to others." data-hi="उनकी प्रतिष्ठा न केवल अनुभव पर, बल्कि हजारों संतुष्ट ग्राहकों के विश्वास पर आधारित है जो लौटते हैं और उनकी सेवाओं की सिफारिश करते हैं।">His reputation is built not only on experience, but on the trust earned from thousands of satisfied clients who return and recommend his services to others.</p>
+      <div class="pills" id="pillsContainer"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section id="services">
+  <div class="s-label"><span data-en="Practice Areas" data-hi="हमारी सेवाएं">Practice Areas</span></div>
+  <h2 class="s-title rv" data-en="Our Legal <em>Services</em>" data-hi="कानूनी <em>सेवाएं</em>">Our Legal <em>Services</em></h2>
+  <div class="s-rule rv"><div class="s-rule-ico">⚖</div></div>
+  <div class="svc-grid" id="svcGrid"></div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section id="testimonials">
+  <div class="s-label"><span data-en="Client Testimonials" data-hi="ग्राहकों की राय">Client Testimonials</span></div>
+  <h2 class="s-title rv" data-en="What Our <em>Clients Say</em>" data-hi="हमारे <em>ग्राहक क्या कहते हैं</em>">What Our <em>Clients Say</em></h2>
+  <div class="s-rule rv"><div class="s-rule-ico">⚖</div></div>
+  <div class="testi-grid" id="testiGrid"></div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section id="faq">
+  <div class="s-label"><span data-en="Frequently Asked" data-hi="अक्सर पूछे जाने वाले">Frequently Asked</span></div>
+  <h2 class="s-title rv" data-en="Common <em>Questions</em>" data-hi="सामान्य <em>प्रश्न</em>">Common <em>Questions</em></h2>
+  <div class="s-rule rv"><div class="s-rule-ico">⚖</div></div>
+  <div class="faq-wrap" id="faqWrap"></div>
+</section>
+
+<!-- ══ LOCATION ══ -->
+<section id="location">
+  <div class="s-label"><span data-en="Find Us" data-hi="हमें खोजें">Find Us</span></div>
+  <h2 class="s-title rv" data-en="Our <em>Location</em>" data-hi="हमारा <em>स्थान</em>">Our <em>Location</em></h2>
+  <div class="s-rule rv"><div class="s-rule-ico">⚖</div></div>
+  <div class="loc-grid">
+    <div class="loc-items rl" id="locItems"></div>
+    <div class="map-box rr">
+      <iframe
+        src="https://maps.google.com/maps?q=Imtiaz+Ahmad+Khan+Advocate+Phoolpur+Azamgarh+Uttar+Pradesh+India&output=embed&z=15"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Office Location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══ APPOINTMENT ══ -->
+<section id="consult">
+  <div class="appt-grid">
+    <div class="appt-info rl">
+      <div class="s-label"><span data-en="Book Appointment" data-hi="अपॉइंटमेंट बुक करें">Book Appointment</span></div>
+      <h2 class="s-title" data-en="Schedule Your <em>Consultation</em>" data-hi="अपना <em>परामर्श</em> बुक करें">Schedule Your <em>Consultation</em></h2>
+      <div class="s-rule"><div class="s-rule-ico">⚖</div></div>
+      <p data-en="Take the first step towards resolving your property matter. Fill out the form to book a confidential consultation with Advocate Imtiaz Ahmad Khan. Your details are completely secure and private." data-hi="अपनी संपत्ति की समस्या हल करने की दिशा में पहला कदम उठाएं। गोपनीय परामर्श बुक करने के लिए फ़ॉर्म भरें। आपका विवरण पूरी तरह सुरक्षित और निजी है।">Take the first step towards resolving your property matter. Fill out the form to book a confidential consultation with Advocate Imtiaz Ahmad Khan. Your details are completely secure and private.</p>
+      <div class="perks" id="perksContainer"></div>
+    </div>
+    <div class="appt-box rr">
+      <h3 data-en="Book Appointment" data-hi="अपॉइंटमेंट बुक करें">Book Appointment</h3>
+      <p class="a-sub" data-en="Fill in your details and we will confirm your slot." data-hi="अपना विवरण भरें और हम स्लॉट की पुष्टि करेंगे।">Fill in your details and we will confirm your slot.</p>
+      <form id="apptForm" novalidate>
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_subject" value="New Appointment – Advocate Imtiaz Ahmad Khan"/>
+        <input type="hidden" name="_template" value="table"/>
+        <div class="f-row">
+          <div class="fg">
+            <label id="lbl-fname" for="fname">First Name *</label>
+            <input type="text" id="fname" name="First Name" autocomplete="given-name" required/>
+          </div>
+          <div class="fg">
+            <label id="lbl-lname" for="lname">Last Name *</label>
+            <input type="text" id="lname" name="Last Name" autocomplete="family-name" required/>
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="fg">
+            <label id="lbl-phone" for="fphone">Phone Number *</label>
+            <input type="tel" id="fphone" name="Phone" autocomplete="tel" required/>
+          </div>
+          <div class="fg">
+            <label id="lbl-email" for="femail">Email Address</label>
+            <input type="email" id="femail" name="Email" autocomplete="email"/>
+          </div>
+        </div>
+        <div class="fg">
+          <label id="lbl-date" for="fdate">Preferred Date *</label>
+          <input type="date" id="fdate" name="Date" required/>
+        </div>
+        <div class="fg">
+          <label id="lbl-slot">Time Slot *</label>
+          <div class="time-grid" id="timeGrid">
+            <p style="color:var(--muted);font-size:0.82rem;grid-column:1/-1;" id="slotHint">Select a date first to view available slots.</p>
+          </div>
+          <input type="hidden" id="selectedSlot" name="Time Slot" required/>
+        </div>
+        <div class="fg">
+          <label id="lbl-service" for="fservice">Service Required *</label>
+          <select id="fservice" name="Service" required>
+            <option value="" disabled selected id="svc-placeholder">Select service</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label id="lbl-matter" for="fmatter">Describe Your Matter</label>
+          <textarea id="fmatter" name="Matter" rows="4"></textarea>
+        </div>
+        <button type="submit" class="f-sub" id="subBtn">Confirm Appointment</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="fg-grid">
+    <div class="fb">
+      <h3>Imtiaz Ahmad Khan</h3>
+      <p class="f-tag" data-en="Advocate · Phoolpur, Azamgarh" data-hi="अधिवक्ता · फूलपुर, आज़मगढ़">Advocate · Phoolpur, Azamgarh</p>
+      <p data-en="Trusted legal counsel for property matters across Azamgarh for over two decades. Honesty, clarity, and results — every case, every time." data-hi="दो दशकों से आज़मगढ़ में संपत्ति मामलों के लिए विश्वसनीय कानूनी सलाह। ईमानदारी, स्पष्टता और परिणाम — हर मामले में, हर बार।">Trusted legal counsel for property matters across Azamgarh for over two decades. Honesty, clarity, and results — every case, every time.</p>
+    </div>
+    <div class="fc">
+      <h4 data-en="Services" data-hi="सेवाएं">Services</h4>
+      <ul>
+        <li><a href="#services" data-en="Land Disputes" data-hi="भूमि विवाद">Land Disputes</a></li>
+        <li><a href="#services" data-en="Registry & Docs" data-hi="रजिस्ट्री एवं दस्तावेज़">Registry & Docs</a></li>
+        <li><a href="#services" data-en="Title Verification" data-hi="टाइटल सत्यापन">Title Verification</a></li>
+        <li><a href="#services" data-en="Partition Cases" data-hi="बंटवारा मामले">Partition Cases</a></li>
+        <li><a href="#services" data-en="Legal Consultation" data-hi="कानूनी परामर्श">Legal Consultation</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h4 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h4>
+      <ul>
+        <li><a href="#home" data-en="Home" data-hi="होम">Home</a></li>
+        <li><a href="#about" data-en="About" data-hi="परिचय">About</a></li>
+        <li><a href="#testimonials" data-en="Testimonials" data-hi="प्रशंसापत्र">Testimonials</a></li>
+        <li><a href="#faq" data-en="FAQs" data-hi="प्रश्नोत्तर">FAQs</a></li>
+        <li><a href="#consult" data-en="Book Appointment" data-hi="अपॉइंटमेंट बुक करें">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <p data-en="© 2025 <span>Imtiaz Ahmad Khan Advocate</span> | Areeb Khan | Shadan Khan | All Rights Reserved" data-hi="© 2025 <span>इम्तियाज़ अहमद खान अधिवक्ता</span> | अरीब खान | शादान खान | सर्वाधिकार सुरक्षित">© 2025 <span>Imtiaz Ahmad Khan Advocate</span> | Areeb Khan | Shadan Khan | All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- ══ AI CHAT WIDGET ══ -->
+<button class="chat-fab" id="chatFab" onclick="toggleChat()" aria-label="Open Legal Assistant Chat">
+  ⚖
+  <div class="fab-badge"></div>
+</button>
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-header-left">
+      <div class="chat-avatar">⚖</div>
+      <div class="chat-header-info">
+        <h4 id="chat-title-text">Legal Assistant</h4>
+        <span id="chat-online-text">● Online · Real-time info</span>
+      </div>
+    </div>
+    <button class="chat-close" onclick="toggleChat()" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-footer">
+    <input class="chat-input" id="chatInput" type="text" placeholder="Ask about property law..." onkeydown="if(event.key==='Enter')sendChat()"/>
+    <button class="chat-send" id="chatSendBtn" onclick="sendChat()">→</button>
+  </div>
+  <div class="chat-powered" id="chat-powered-text">Powered by AI · Real-time info</div>
+</div>
+
+<!-- ══ JAVASCRIPT ══ -->
+<script>
+/* ═══════════════════════════════════════════════
+   DATA: CONTENT & TRANSLATIONS
+═══════════════════════════════════════════════ */
+const DATA = {
+  en: {
+    pills: ['Honest Advice','Strong Representation','Clear Communication','Detailed Documentation','Client-Focused','Quick Analysis'],
+    services: [
+      { ico:'🏛️', title:'Land & Property Disputes', desc:'Expert handling of complex land disputes, boundary conflicts, and encroachment matters with strategic legal representation in court.' },
+      { ico:'📋', title:'Registry & Documentation', desc:'Complete assistance with property registration, deed preparation, and document verification for legally sound ownership transfer.' },
+      { ico:'🔍', title:'Title Verification', desc:'Thorough examination of property title chains to uncover encumbrances, liens, and legal defects before purchase.' },
+      { ico:'⚖️', title:'Partition Cases', desc:'Equitable division of joint family property and ancestral land with professional legal guidance through the partition process.' },
+      { ico:'🏢', title:'Ownership Issues', desc:'Resolution of disputed ownership, adverse possession claims, and inheritance-related property conflicts.' },
+      { ico:'📝', title:'Agreement Drafting', desc:'Professionally drafted sale agreements, lease deeds, MOUs, and other property-related legal documents.' },
+      { ico:'💬', title:'Legal Consultation', desc:'In-depth legal advice on property transactions, investment safety, and pre-litigation strategy for informed decisions.' },
+      { ico:'🗺️', title:'Tehsil & Revenue Matters', desc:'Guidance through revenue court proceedings, mutation applications, and tehsil-level property record corrections.' }
+    ],
+    testimonials: [
+      { text:'Handled my land dispute professionally and efficiently. The level of expertise and dedication was truly remarkable. Highly recommended for any property matter.', name:'Belal Siddiqui', ini:'BS' },
+      { text:'Very experienced and trustworthy property lawyer. His deep understanding of property law and calm, strategic approach gave us immense confidence throughout the case.', name:'Dr. A.C. Yadav', ini:'DY' },
+      { text:'Gave clear, honest and practical legal advice. He simplified a very complex legal situation and guided us to the best possible outcome. Exceptional service.', name:'Pankaj Gupta', ini:'PG' },
+      { text:'Strong knowledge in property cases and documentation. His attention to detail saved us from a potentially devastating land dispute. Truly a trusted legal advisor.', name:'Dr. Naiyer Azam', ini:'NA' }
+    ],
+    faq: [
+      { q:'How can I solve a land dispute?', a:'Proper legal consultation and documentation review is required before filing a case. Advocate Khan will examine your records, identify the core dispute, and recommend the best strategy — negotiation, mediation, or litigation.' },
+      { q:'What documents are needed for property registry?', a:'Typically: identity proof (Aadhaar, PAN), land papers (Khasra/Khatauni), previous ownership records, original sale agreement, and an encumbrance certificate. We guide you through a complete checklist tailored to your property.' },
+      { q:'How long does a property case take?', a:'Duration depends on case complexity, document availability, and court procedure. Simple matters can resolve in months; complex disputes may take longer. Advocate Khan works to achieve the fastest resolution possible.' },
+      { q:'Is legal verification important before buying land?', a:'Absolutely. It prevents future disputes and ensures safe ownership by uncovering hidden encumbrances, litigation, or fraudulent titles. This step is essential before any property purchase.' },
+      { q:'How do I book an appointment?', a:'Use the appointment form on this page. Fill in your name, contact details, preferred date and time, and a brief description of your matter. We confirm your appointment promptly.' }
+    ],
+    location: [
+      { ico:'📍', title:'Office Address', val:'Phoolpur, Azamgarh\nUttar Pradesh, India' },
+      { ico:'🕐', title:'Office Hours', val:'Monday – Saturday\n10:00 AM – 5:00 PM' },
+      { ico:'⚖', title:'Court Practice', val:'Phoolpur Court, Azamgarh\nDistrict Court, Azamgarh' },
+      { ico:'📅', title:'Appointments', val:'By prior appointment only\nBook using the form below' }
+    ],
+    perks: ['100% Confidential Consultation','Direct Meeting with Advocate Khan','Prompt Appointment Confirmation','Clear Legal Guidance from Day One'],
+    apptServices: ['Land & Property Dispute','Registry & Documentation','Title Verification','Partition Case','Ownership Issue','Agreement Drafting','Legal Consultation','Tehsil & Revenue Matter','Other'],
+    slots: ['10:00 AM – 11:00 AM','11:00 AM – 12:00 PM','12:00 PM – 1:00 PM','2:00 PM – 3:00 PM','3:00 PM – 4:00 PM','4:00 PM – 5:00 PM'],
+    slotHint: 'Select a date first to view available slots.',
+    slotBooked: 'Booked',
+    submitBtn: 'Confirm Appointment',
+    submitting: 'Sending…',
+    successTitle: 'Appointment Confirmed!',
+    successMsg: 'Your appointment request has been received. We will confirm your slot within 24 hours.',
+    chatWelcome: "Hello! I'm the legal assistant for Advocate Imtiaz Ahmad Khan's office in Phoolpur, Azamgarh. Ask me anything about property law, land disputes, legal processes, or how we can help you.",
+    chatPlaceholder: 'Ask about property law…',
+    chatTitle: 'Legal Assistant',
+    chatOnline: '● Online · Real-time info',
+    chatPowered: 'Powered by AI · Real-time info',
+    chatSend: '→',
+    formLabels: { fname:'First Name *', lname:'Last Name *', phone:'Phone Number *', email:'Email Address', date:'Preferred Date *', slot:'Time Slot *', service:'Service Required *', matter:'Describe Your Matter', servicePH:'Select service' }
+  },
+  hi: {
+    pills: ['ईमानदार सलाह','मजबूत प्रतिनिधित्व','स्पष्ट संवाद','सटीक दस्तावेज़','ग्राहक केंद्रित','त्वरित विश्लेषण'],
+    services: [
+      { ico:'🏛️', title:'भूमि एवं संपत्ति विवाद', desc:'जटिल भूमि विवादों, सीमा संघर्षों और अतिक्रमण मामलों का विशेषज्ञ समाधान।' },
+      { ico:'📋', title:'रजिस्ट्री एवं दस्तावेज़', desc:'संपत्ति पंजीकरण, विलेख तैयारी और दस्तावेज़ सत्यापन में पूर्ण सहायता।' },
+      { ico:'🔍', title:'टाइटल सत्यापन', desc:'खरीद से पहले बाधाओं, ग्रहणाधिकार और कानूनी दोषों का गहन परीक्षण।' },
+      { ico:'⚖️', title:'बंटवारा मामले', desc:'संयुक्त परिवार की संपत्ति और पैतृक भूमि का न्यायसंगत विभाजन।' },
+      { ico:'🏢', title:'स्वामित्व विवाद', desc:'विवादित स्वामित्व, प्रतिकूल कब्जे के दावों और विरासत संबंधी विवादों का समाधान।' },
+      { ico:'📝', title:'समझौता प्रारूपण', desc:'बिक्री समझौते, पट्टा विलेख, एमओयू और अन्य संपत्ति दस्तावेज़ों का पेशेवर प्रारूपण।' },
+      { ico:'💬', title:'कानूनी परामर्श', desc:'संपत्ति लेनदेन, निवेश सुरक्षा और पूर्व-मुकदमेबाजी रणनीति पर गहन सलाह।' },
+      { ico:'🗺️', title:'तहसील एवं राजस्व मामले', desc:'राजस्व न्यायालय कार्यवाही, म्यूटेशन आवेदन और तहसील स्तरीय रिकॉर्ड सुधार।' }
+    ],
+    testimonials: [
+      { text:'मेरा भूमि विवाद पेशेवर और कुशलता से निपटाया। विशेषज्ञता और समर्पण का स्तर वाकई उल्लेखनीय था। किसी भी संपत्ति मामले के लिए अत्यधिक अनुशंसित।', name:'बेलाल सिद्दीकी', ini:'BS' },
+      { text:'बहुत अनुभवी और भरोसेमंद संपत्ति वकील। संपत्ति कानून की गहरी समझ और शांत, रणनीतिक दृष्टिकोण ने हमें पूरे मामले में आत्मविश्वास दिया।', name:'डॉ. ए.सी. यादव', ini:'DY' },
+      { text:'स्पष्ट, ईमानदार और व्यावहारिक कानूनी सलाह दी। उन्होंने एक जटिल कानूनी स्थिति को सरल बनाया और हमें सर्वोत्तम परिणाम तक पहुंचाया।', name:'पंकज गुप्ता', ini:'PG' },
+      { text:'संपत्ति मामलों और दस्तावेज़ीकरण में मजबूत ज्ञान। उनकी सतर्कता ने हमें एक संभावित विनाशकारी भूमि विवाद से बचाया।', name:'डॉ. नैयर आज़म', ini:'NA' }
+    ],
+    faq: [
+      { q:'भूमि विवाद कैसे हल करें?', a:'मामला दर्ज करने से पहले उचित कानूनी परामर्श और दस्तावेज़ समीक्षा आवश्यक है। अधिवक्ता खान आपके रिकॉर्ड की जांच करेंगे, मूल विवाद की पहचान करेंगे और सर्वोत्तम रणनीति की सिफारिश करेंगे।' },
+      { q:'संपत्ति रजिस्ट्री के लिए कौन से दस्तावेज़ चाहिए?', a:'सामान्यतः: पहचान प्रमाण (आधार, पैन), भूमि कागज़ात (खसरा/खतौनी), पिछले स्वामित्व रिकॉर्ड, मूल बिक्री समझौता और बाधा प्रमाण पत्र।' },
+      { q:'संपत्ति मामले में कितना समय लगता है?', a:'अवधि मामले की जटिलता, दस्तावेज़ों की उपलब्धता और न्यायालय प्रक्रिया पर निर्भर करती है। सरल मामले महीनों में हल हो सकते हैं।' },
+      { q:'भूमि खरीदने से पहले कानूनी सत्यापन महत्वपूर्ण है?', a:'बिल्कुल। यह भविष्य के विवादों को रोकता है और छुपे बाधाओं या धोखाधड़ी वाले टाइटल को उजागर करके सुरक्षित स्वामित्व सुनिश्चित करता है।' },
+      { q:'अपॉइंटमेंट कैसे बुक करें?', a:'इस पृष्ठ पर अपॉइंटमेंट फ़ॉर्म का उपयोग करें। अपना नाम, संपर्क विवरण, पसंदीदा तिथि और समय भरें।' }
+    ],
+    location: [
+      { ico:'📍', title:'कार्यालय पता', val:'फूलपुर, आज़मगढ़\nउत्तर प्रदेश, भारत' },
+      { ico:'🕐', title:'कार्यालय समय', val:'सोमवार – शनिवार\nसुबह 10:00 – शाम 5:00' },
+      { ico:'⚖', title:'न्यायालय अभ्यास', val:'फूलपुर न्यायालय, आज़मगढ़\nज़िला न्यायालय, आज़मगढ़' },
+      { ico:'📅', title:'अपॉइंटमेंट', val:'पूर्व अपॉइंटमेंट द्वारा\nनीचे दिए फ़ॉर्म से बुक करें' }
+    ],
+    perks: ['100% गोपनीय परामर्श','अधिवक्ता खान से सीधी मुलाकात','त्वरित अपॉइंटमेंट पुष्टि','पहले दिन से स्पष्ट कानूनी मार्गदर्शन'],
+    apptServices: ['भूमि एवं संपत्ति विवाद','रजिस्ट्री एवं दस्तावेज़','टाइटल सत्यापन','बंटवारा मामला','स्वामित्व विवाद','समझौता प्रारूपण','कानूनी परामर्श','तहसील एवं राजस्व मामला','अन्य'],
+    slots: ['10:00 AM – 11:00 AM','11:00 AM – 12:00 PM','12:00 PM – 1:00 PM','2:00 PM – 3:00 PM','3:00 PM – 4:00 PM','4:00 PM – 5:00 PM'],
+    slotHint: 'उपलब्ध स्लॉट देखने के लिए पहले तिथि चुनें।',
+    slotBooked: 'बुक हो गया',
+    submitBtn: 'अपॉइंटमेंट पुष्टि करें',
+    submitting: 'भेज रहा है…',
+    successTitle: 'अपॉइंटमेंट की पुष्टि हो गई!',
+    successMsg: 'आपका अपॉइंटमेंट अनुरोध प्राप्त हो गया है। हम 24 घंटे के भीतर आपके स्लॉट की पुष्टि करेंगे।',
+    chatWelcome: 'नमस्ते! मैं अधिवक्ता इम्तियाज़ अहमद खान के कार्यालय का कानूनी सहायक हूं। संपत्ति कानून, भूमि विवाद या कानूनी प्रक्रियाओं के बारे में कुछ भी पूछें।',
+    chatPlaceholder: 'संपत्ति कानून के बारे में पूछें…',
+    chatTitle: 'कानूनी सहायक',
+    chatOnline: '● ऑनलाइन · रियल-टाइम जानकारी',
+    chatPowered: 'AI द्वारा संचालित · रियल-टाइम जानकारी',
+    chatSend: '→',
+    formLabels: { fname:'पहला नाम *', lname:'अंतिम नाम *', phone:'फ़ोन नंबर *', email:'ईमेल पता', date:'पसंदीदा तिथि *', slot:'समय स्लॉट *', service:'आवश्यक सेवा *', matter:'अपना मामला बताएं', servicePH:'सेवा चुनें' }
+  }
+};
+
+/* ═══════════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════════ */
+let currentLang = 'en';
+let currentTheme = 'dark';
+let selectedSlot = '';
+let chatHistory = [];
+let chatOpen = false;
+
+/* ═══════════════════════════════════════════════
+   RENDER COMPONENTS
+═══════════════════════════════════════════════ */
+function renderPills() {
+  const d = DATA[currentLang];
+  document.getElementById('pillsContainer').innerHTML =
+    d.pills.map(p => `<span class="pill">${p}</span>`).join('');
+}
+
+function renderServices() {
+  const d = DATA[currentLang];
+  document.getElementById('svcGrid').innerHTML =
+    d.services.map((s,i) => `
+      <div class="svc rv">
+        <span class="svc-num">${String(i+1).padStart(2,'0')}</span>
+        <div class="svc-ico">${s.ico}</div>
+        <h3>${s.title}</h3>
+        <p>${s.desc}</p>
+      </div>`).join('');
+  observeReveal();
+}
+
+function renderTestimonials() {
+  const d = DATA[currentLang];
+  document.getElementById('testiGrid').innerHTML =
+    d.testimonials.map(t => `
+      <div class="testi rv">
+        <div class="testi-q">"</div>
+        <p class="testi-text">${t.text}</p>
+        <div class="testi-author">
+          <div class="testi-av">${t.ini}</div>
+          <div>
+            <span class="testi-name">${t.name}</span>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>`).join('');
+  observeReveal();
+}
+
+function renderFAQ() {
+  const d = DATA[currentLang];
+  document.getElementById('faqWrap').innerHTML =
+    d.faq.map((f,i) => `
+      <div class="faq-item rv" id="faq-${i}">
+        <div class="faq-q" onclick="toggleFAQ(${i})">
+          ${f.q}
+          <span class="faq-ico">+</span>
+        </div>
+        <div class="faq-a"><p>${f.a}</p></div>
+      </div>`).join('');
+  observeReveal();
+}
+
+function renderLocation() {
+  const d = DATA[currentLang];
+  document.getElementById('locItems').innerHTML =
+    d.location.map(l => `
+      <div class="loc-item">
+        <div class="loc-ico">${l.ico}</div>
+        <div>
+          <h4>${l.title}</h4>
+          <p>${l.val}</p>
+        </div>
+      </div>`).join('');
+}
+
+function renderPerks() {
+  const d = DATA[currentLang];
+  document.getElementById('perksContainer').innerHTML =
+    d.perks.map(p => `<div class="perk"><div class="perk-dot"></div>${p}</div>`).join('');
+}
+
+function renderServiceOptions() {
+  const d = DATA[currentLang];
+  const sel = document.getElementById('fservice');
+  const cur = sel.value;
+  sel.innerHTML = `<option value="" disabled ${!cur ? 'selected':''} id="svc-placeholder">${d.formLabels.servicePH}</option>` +
+    d.apptServices.map(s => `<option ${cur===s?'selected':''}>${s}</option>`).join('');
+}
+
+function renderFormLabels() {
+  const d = DATA[currentLang].formLabels;
+  document.getElementById('lbl-fname').textContent = d.fname;
+  document.getElementById('lbl-lname').textContent = d.lname;
+  document.getElementById('lbl-phone').textContent = d.phone;
+  document.getElementById('lbl-email').textContent = d.email;
+  document.getElementById('lbl-date').textContent = d.date;
+  document.getElementById('lbl-slot').textContent = d.slot;
+  document.getElementById('lbl-service').textContent = d.service;
+  document.getElementById('lbl-matter').textContent = d.matter;
+  document.getElementById('slotHint') && (document.getElementById('slotHint').textContent = d.slotHint || DATA[currentLang].slotHint);
+  document.getElementById('subBtn').textContent = DATA[currentLang].submitBtn;
+}
+
+function renderChatUI() {
+  const d = DATA[currentLang];
+  document.getElementById('chat-title-text').textContent = d.chatTitle;
+  document.getElementById('chat-online-text').textContent = d.chatOnline;
+  document.getElementById('chat-powered-text').textContent = d.chatPowered;
+  document.getElementById('chatInput').placeholder = d.chatPlaceholder;
+}
+
+function renderAll() {
+  renderPills();
+  renderServices();
+  renderTestimonials();
+  renderFAQ();
+  renderLocation();
+  renderPerks();
+  renderServiceOptions();
+  renderFormLabels();
+  renderChatUI();
+  translateStatic();
+  renderTimeSlots(); // refresh slots if date selected
+}
+
+/* ═══════════════════════════════════════════════
+   STATIC TRANSLATION
+═══════════════════════════════════════════════ */
+function translateStatic() {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.innerHTML = currentLang === 'en'
+      ? el.getAttribute('data-en')
+      : el.getAttribute('data-hi');
+  });
+}
+
+/* ═══════════════════════════════════════════════
+   THEME & LANGUAGE TOGGLE
+═══════════════════════════════════════════════ */
+function toggleTheme() {
+  currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  document.getElementById('themeBtn').textContent = currentTheme === 'dark' ? '☀' : '🌙';
+}
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'hi' : 'en';
+  document.documentElement.setAttribute('data-lang', currentLang);
+  document.getElementById('langBtn').textContent = currentLang === 'en' ? 'हिं' : 'EN';
+  document.documentElement.lang = currentLang === 'hi' ? 'hi' : 'en';
+  renderAll();
+  // Re-init chat welcome if no messages yet
+  if (chatHistory.length === 0) initChatWelcome();
+}
+
+/* ═══════════════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════════════ */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  const doc = document.documentElement;
+  const progress = (window.scrollY / (doc.scrollHeight - doc.clientHeight)) * 100;
+  document.getElementById('progress-bar').style.width = progress + '%';
+}, {passive:true});
+
+function toggleNav() {
+  const menu = document.getElementById('mobMenu');
+  const btn = document.getElementById('hbg');
+  const isOpen = menu.classList.toggle('open');
+  btn.classList.toggle('active', isOpen);
+}
+function closeNav() {
+  document.getElementById('mobMenu').classList.remove('open');
+  document.getElementById('hbg').classList.remove('active');
+}
+document.addEventListener('click', e => {
+  const m = document.getElementById('mobMenu'), b = document.getElementById('hbg');
+  if (m.classList.contains('open') && !m.contains(e.target) && !b.contains(e.target)) closeNav();
+});
+
+/* ═══════════════════════════════════════════════
+   FAQ
+═══════════════════════════════════════════════ */
+function toggleFAQ(i) {
+  const item = document.getElementById(`faq-${i}`);
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+/* ═══════════════════════════════════════════════
+   SCROLL REVEAL
+═══════════════════════════════════════════════ */
+function observeReveal() {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  }, {threshold:0.1, rootMargin:'0px 0px -30px 0px'});
+  document.querySelectorAll('.rv:not(.in),.rl:not(.in),.rr:not(.in)').forEach(el => io.observe(el));
+}
+
+/* ═══════════════════════════════════════════════
+   COUNTER ANIMATION
+═══════════════════════════════════════════════ */
+const counted = new Set();
+const co = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(!e.isIntersecting || counted.has(e.target)) return;
+    counted.add(e.target);
+    const el = e.target, tgt = parseInt(el.dataset.count), sfx = el.dataset.suffix||'';
+    let cur = 0; const steps=60, dur=1800, step=tgt/steps, ivl=dur/steps;
+    const t = setInterval(()=>{cur=Math.min(cur+step,tgt);el.textContent=Math.floor(cur)+sfx;if(cur>=tgt)clearInterval(t);},ivl);
+  });
+},{threshold:0.3});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+
+/* ═══════════════════════════════════════════════
+   APPOINTMENT — BOOKING SYSTEM
+═══════════════════════════════════════════════ */
+// Bookings stored in localStorage: { "YYYY-MM-DD": ["slot1", ...] }
+function getBookings() {
+  try { return JSON.parse(localStorage.getItem('advocate_iak_bookings') || '{}'); }
+  catch { return {}; }
+}
+function saveBooking(date, slot) {
+  const b = getBookings();
+  if(!b[date]) b[date] = [];
+  if(!b[date].includes(slot)) b[date].push(slot);
+  localStorage.setItem('advocate_iak_bookings', JSON.stringify(b));
+}
+function isBooked(date, slot) {
+  const b = getBookings();
+  return b[date] && b[date].includes(slot);
+}
+
+function renderTimeSlots() {
+  const date = document.getElementById('fdate').value;
+  const grid = document.getElementById('timeGrid');
+  if(!date) {
+    grid.innerHTML = `<p style="color:var(--muted);font-size:0.82rem;grid-column:1/-1;" id="slotHint">${DATA[currentLang].slotHint}</p>`;
+    selectedSlot = '';
+    document.getElementById('selectedSlot').value = '';
+    return;
+  }
+  const slots = DATA[currentLang].slots;
+  const bookedText = DATA[currentLang].slotBooked;
+  grid.innerHTML = slots.map(s => {
+    const booked = isBooked(date, s);
+    return `<button type="button" class="time-btn ${booked?'booked':''} ${selectedSlot===s?'selected':''}"
+      onclick="${booked?'':(`selectSlot('${s.replace(/'/g,"\\'")}')`)}">
+      ${booked ? `${s.split('–')[0]} <br><small>${bookedText}</small>` : s}
+    </button>`;
+  }).join('');
+}
+
+function selectSlot(slot) {
+  selectedSlot = slot;
+  document.getElementById('selectedSlot').value = slot;
+  renderTimeSlots();
+}
+
+document.getElementById('fdate').addEventListener('change', function() {
+  this.min = new Date().toISOString().split('T')[0];
+  selectedSlot = '';
+  document.getElementById('selectedSlot').value = '';
+  renderTimeSlots();
+});
+
+// Set min date
+document.getElementById('fdate').min = new Date().toISOString().split('T')[0];
+
+/* Form Submit */
+document.getElementById('apptForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const fname = document.getElementById('fname').value.trim();
+  const lname = document.getElementById('lname').value.trim();
+  const phone = document.getElementById('fphone').value.trim();
+  const date = document.getElementById('fdate').value;
+  const slot = selectedSlot;
+  const service = document.getElementById('fservice').value;
+
+  if(!fname||!lname||!phone||!date||!slot||!service) {
+    const lang = currentLang;
+    alert(lang==='hi' ? 'कृपया सभी आवश्यक फ़ील्ड भरें।' : 'Please fill in all required fields.');
+    return;
+  }
+
+  const btn = document.getElementById('subBtn');
+  btn.disabled = true;
+  btn.textContent = DATA[currentLang].submitting;
+
+  // Submit via FormSubmit AJAX (email obfuscated)
+  const ep = 'https://formsubmit.co/ajax/' + atob('YXJlZWJraHFuM0BnbWFpbC5jb20=');
+  const fd = new FormData();
+  fd.append('First Name', fname);
+  fd.append('Last Name', lname);
+  fd.append('Phone', phone);
+  fd.append('Email', document.getElementById('femail').value || 'N/A');
+  fd.append('Date', date);
+  fd.append('Time Slot', slot);
+  fd.append('Service', service);
+  fd.append('Matter', document.getElementById('fmatter').value || 'N/A');
+  fd.append('_subject', 'New Appointment – Advocate Imtiaz Ahmad Khan');
+  fd.append('_captcha', 'false');
+
+  try {
+    await fetch(ep, { method:'POST', body:fd, headers:{'Accept':'application/json'} });
+  } catch(err) {}
+
+  // Save booking locally
+  saveBooking(date, slot);
+
+  // Show success
+  document.getElementById('ty-title').textContent = DATA[currentLang].successTitle;
+  document.getElementById('ty-msg').textContent = DATA[currentLang].successMsg;
+  document.getElementById('tyOv').classList.add('show');
+
+  // Reset form
+  this.reset();
+  selectedSlot = '';
+  document.getElementById('selectedSlot').value = '';
+  renderTimeSlots();
+  btn.disabled = false;
+  btn.textContent = DATA[currentLang].submitBtn;
+});
+
+function closeTy() {
+  document.getElementById('tyOv').classList.remove('show');
+}
+
+/* ═══════════════════════════════════════════════
+   AI CHAT ASSISTANT
+═══════════════════════════════════════════════ */
+const SYSTEM_PROMPT = `You are a knowledgeable legal assistant for Advocate Imtiaz Ahmad Khan's property law practice in Phoolpur, Azamgarh, Uttar Pradesh, India.
+
+About the advocate: 20+ years experience, 5000+ cases handled, specializing in property law — land disputes, registry, title verification, partition cases, ownership issues, agreement drafting, tehsil & revenue matters. Office hours: Monday-Saturday, 10AM-5PM.
+
+Help visitors with:
+- General property law questions in India
+- Legal processes (registry, partition, title verification)
+- What documents are needed
+- What to expect in consultations
+- Any real-time legal updates (use web search when needed)
+
+Guidelines:
+- Be professional, warm, concise (2-4 sentences usually)
+- Recommend consulting Advocate Khan for specific legal advice
+- If user writes in Hindi, respond in Hindi
+- Never provide specific legal advice that replaces professional consultation`;
+
+function initChatWelcome() {
+  const body = document.getElementById('chatBody');
+  body.innerHTML = '';
+  chatHistory = [];
+  addChatMsg(DATA[currentLang].chatWelcome, 'bot');
+}
+
+function toggleChat() {
+  chatOpen = !chatOpen;
+  const win = document.getElementById('chatWindow');
+  win.classList.toggle('open', chatOpen);
+  if(chatOpen && chatHistory.length === 0) initChatWelcome();
+  if(chatOpen) document.getElementById('chatInput').focus();
+}
+
+function addChatMsg(text, role) {
+  const body = document.getElementById('chatBody');
+  const div = document.createElement('div');
+  div.className = `chat-msg ${role}`;
+  div.textContent = text;
+  body.appendChild(div);
+  body.scrollTop = body.scrollHeight;
+  return div;
+}
+
+function addTypingIndicator() {
+  const body = document.getElementById('chatBody');
+  const div = document.createElement('div');
+  div.className = 'chat-msg typing';
+  div.id = 'typingIndicator';
+  div.innerHTML = '<div class="typing-dots"><span></span><span></span><span></span></div>';
+  body.appendChild(div);
+  body.scrollTop = body.scrollHeight;
+}
+
+function removeTypingIndicator() {
+  const el = document.getElementById('typingIndicator');
+  if(el) el.remove();
+}
+
+async function sendChat() {
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if(!msg) return;
+
+  input.value = '';
+  document.getElementById('chatSendBtn').disabled = true;
+  addChatMsg(msg, 'user');
+  chatHistory.push({role:'user', content: msg});
+
+  addTypingIndicator();
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:1000,
+        system: SYSTEM_PROMPT,
+        tools:[{type:'web_search_20250305',name:'web_search'}],
+        messages: chatHistory
+      })
+    });
+
+    const data = await res.json();
+    removeTypingIndicator();
+
+    // Extract text from response (handle tool use blocks)
+    let reply = '';
+    if(data.content && Array.isArray(data.content)) {
+      for(const block of data.content) {
+        if(block.type === 'text') reply += block.text;
+      }
+    }
+    if(!reply) reply = currentLang==='hi'
+      ? 'क्षमा करें, अभी जवाब देने में समस्या है। कृपया दोबारा कोशिश करें।'
+      : 'Sorry, I had trouble responding. Please try again.';
+
+    chatHistory.push({role:'assistant', content: reply});
+    addChatMsg(reply, 'bot');
+  } catch(err) {
+    removeTypingIndicator();
+    const errMsg = currentLang==='hi'
+      ? 'नेटवर्क त्रुटि। कृपया दोबारा कोशिश करें।'
+      : 'Network error. Please try again.';
+    addChatMsg(errMsg, 'bot');
+  }
+
+  document.getElementById('chatSendBtn').disabled = false;
+  document.getElementById('chatInput').focus();
+}
+
+/* ═══════════════════════════════════════════════
+   INITIALIZE
+═══════════════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', () => {
+  renderAll();
+  observeReveal();
+
+  // Re-observe on any mutation (for dynamic content)
+  setTimeout(observeReveal, 300);
+});
+</script>
+</body>
+</html>

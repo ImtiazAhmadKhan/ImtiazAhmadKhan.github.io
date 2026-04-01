@@ -793,64 +793,53 @@ footer{
     <div class="appt-box rr">
       <h3 data-en="Book Appointment" data-hi="अपॉइंटमेंट बुक करें">Book Appointment</h3>
       <p class="a-sub" data-en="Fill in your details and we will confirm your slot." data-hi="अपना विवरण भरें और हम स्लॉट की पुष्टि करेंगे।">Fill in your details and we will confirm your slot.</p>
-     <form id="apptForm" action="https://formsubmit.co/areebkhqn3@gmail.com" method="POST">
-
-  <!-- REQUIRED SETTINGS -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_subject" value="New Appointment – Advocate Imtiaz Ahmad Khan">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next" value="thankyou.html">
-
-  <div class="f-row">
-    <div class="fg">
-      <label>First Name *</label>
-      <input type="text" name="First Name" required>
-    </div>
-    <div class="fg">
-      <label>Last Name *</label>
-      <input type="text" name="Last Name" required>
-    </div>
-  </div>
-
-  <div class="f-row">
-    <div class="fg">
-      <label>Phone *</label>
-      <input type="tel" name="Phone" required>
-    </div>
-    <div class="fg">
-      <label>Email</label>
-      <input type="email" name="Email">
-    </div>
-  </div>
-
-  <div class="fg">
-    <label>Date *</label>
-    <input type="date" name="Date" required>
-  </div>
-
-  <div class="fg">
-    <label>Time Slot *</label>
-    <input type="text" name="Time Slot" required placeholder="Enter selected time">
-  </div>
-
-  <div class="fg">
-    <label>Service *</label>
-    <select name="Service" required>
-      <option>Land & Property Dispute</option>
-      <option>Registry & Documentation</option>
-      <option>Title Verification</option>
-      <option>Partition Case</option>
-      <option>Legal Consultation</option>
-    </select>
-  </div>
-
-  <div class="fg">
-    <label>Describe Matter</label>
-    <textarea name="Message"></textarea>
-  </div>
-
-  <button type="submit" class="f-sub">Confirm Appointment</button>
-</form>
+      <form id="apptForm" novalidate>
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_subject" value="New Appointment – Advocate Imtiaz Ahmad Khan"/>
+        <input type="hidden" name="_template" value="table"/>
+        <div class="f-row">
+          <div class="fg">
+            <label id="lbl-fname" for="fname">First Name *</label>
+            <input type="text" id="fname" name="First Name" autocomplete="given-name" required/>
+          </div>
+          <div class="fg">
+            <label id="lbl-lname" for="lname">Last Name *</label>
+            <input type="text" id="lname" name="Last Name" autocomplete="family-name" required/>
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="fg">
+            <label id="lbl-phone" for="fphone">Phone Number *</label>
+            <input type="tel" id="fphone" name="Phone" autocomplete="tel" required/>
+          </div>
+          <div class="fg">
+            <label id="lbl-email" for="femail">Email Address</label>
+            <input type="email" id="femail" name="Email" autocomplete="email"/>
+          </div>
+        </div>
+        <div class="fg">
+          <label id="lbl-date" for="fdate">Preferred Date *</label>
+          <input type="date" id="fdate" name="Date" required/>
+        </div>
+        <div class="fg">
+          <label id="lbl-slot">Time Slot *</label>
+          <div class="time-grid" id="timeGrid">
+            <p style="color:var(--muted);font-size:0.82rem;grid-column:1/-1;" id="slotHint">Select a date first to view available slots.</p>
+          </div>
+          <input type="hidden" id="selectedSlot" name="Time Slot" required/>
+        </div>
+        <div class="fg">
+          <label id="lbl-service" for="fservice">Service Required *</label>
+          <select id="fservice" name="Service" required>
+            <option value="" disabled selected id="svc-placeholder">Select service</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label id="lbl-matter" for="fmatter">Describe Your Matter</label>
+          <textarea id="fmatter" name="Matter" rows="4"></textarea>
+        </div>
+        <button type="submit" class="f-sub" id="subBtn">Confirm Appointment</button>
+      </form>
     </div>
   </div>
 </section>
@@ -1310,7 +1299,7 @@ document.getElementById('apptForm').addEventListener('submit', async function(e)
   btn.textContent = DATA[currentLang].submitting;
 
   // Submit via FormSubmit AJAX (email obfuscated)
-const ep = 'https://formsubmit.co/ajax/areebkhqn3@gmail.com';
+  const ep = 'https://formsubmit.co/ajax/areebkhqn3@gmail.com';
   const fd = new FormData();
   fd.append('First Name', fname);
   fd.append('Last Name', lname);
